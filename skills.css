@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282d57;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.logo {
+    color: #fcefe9;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: "Bell MT", serif;
+}
+
+nav a {
+    margin: 40px;
+    text-decoration: none;
+    color: #B99470;
+    padding: 0 1rem;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+}
+
+nav a:hover {
+    color: #a7d5e5;
+}
+
+h1 {
+    margin: 80px;
+    font-family: Bell MT;
+    text-align: center;
+    color: #B99470;
+    font-size: 2.25rem;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: rgb(23, 23, 23);
+    box-shadow: 0 4px 8px 0 #65bedb;
+    transition: 0.3s;
+    padding: 10px;
+    margin: 40px;
+    height: 300px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -15px;
+    border-radius: 5%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #6bbcd7;
+}
+
+.column {
+    float: left;
+    width: 400px;
+    padding: 0 1px;
+    margin-left: 10px;
+    margin-right: 94px;
+}
+
+.card {
+    font-size: 1.25rem;
+    color: bisque;
+}
+
+.card p {
+    color: bisque;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -50px;
+    font-size: 1rem;
+}
+
+h2 {
+    color: #454636;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 75px;
+    color: beige;
+}
+
+.card img {
+    width: 70%;
+    margin-left: 45px;
+    margin-top: -75px;
+}

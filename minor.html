@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Gesture Recognition Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for the smooth scrolling effect */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('background.jpeg'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .content-box {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 5xl;
+      margin: 1rem auto;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Animation classes */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .slide-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slideInLeft 1s forwards;
+    }
+
+    @keyframes slideInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .slide-in-right {
+      opacity: 0;
+      transform: translateX(50px);
+      animation: slideInRight 1s forwards;
+    }
+
+    @keyframes slideInRight {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="text-white min-h-screen font-sans">
+  <!-- Header Section -->
+  <header class="p-6 flex justify-between items-center bg-opacity-90 bg-gray-800 rounded-b-lg shadow-lg fade-in">
+    <h1 class="text-4xl font-bold"><a href="projects.html" style="text-decoration: none; color: white;">Hand Gesture Recognition</a></h1>
+    <nav class="ml-auto">
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <!--<li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>-->
+        <li><a href="cont.html" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex items-center justify-center">
+    <div class="text-center content-box fade-in">
+      <h2 class="text-5xl font-extrabold mb-4">Welcome to Hand Gesture Recognition Project</h2>
+      <p class="text-xl mb-6">Explore the details of our innovative project that uses hand gestures to control a rover.</p>
+      <a href="#introduction-about" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Introduction and About Us Section -->
+  <section id="introduction-about" class="py-20 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Introduction</h2>
+      <p class="mb-6">Our project focuses on developing a hand gesture-controlled rover to assist individuals with disabilities, enhancing their mobility and independence through intuitive control technology. By leveraging advanced image processing and microcontroller integration, our solution offers a reliable and efficient means of navigation, breaking down barriers and opening new possibilities for those in need. This innovative approach aims to provide an affordable and user-friendly solution that can be easily adapted to various environments and user requirements. The technology behind the rover includes state-of-the-art components and software that ensure high accuracy and responsiveness, making it a valuable tool for improving the quality of life for many individuals.</p>
+
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <div class="mb-6">
+        <h3 class="text-2xl font-bold mb-4">Team Members</h3>
+        <div class="flex flex-wrap justify-center slide-in-left">
+          <div class="m-4 text-center">
+            <img src="mayank.jpg" alt="Mayank Soni" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Mayank Soni</p>
+            <p>S2307-812</p>
+            <a href="mailto:mayank.soni@example.com" class="text-blue-400 hover:underline">mayank.soni@example.com</a>
+          </div>
+          <div class="m-4 text-center">
+            <img src="tuhinansh.jpg" alt="Tuhinansh Sharma" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Tuhinansh Sharma</p>
+            <p>S2306-1188</p>
+            <a href="mailto:tuhinansh.sharma@example.com" class="text-blue-400 hover:underline">tuhinansh.sharma@example.com</a>
+          </div>
+          <div class="m-4 text-center">
+            <img src="pranav.jpg" alt="Pranav Khatavkar" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Pranav Khatavkar</p>
+            <p>S2309-1397</p>
+            <a href="mailto:pranav.khatavkar@example.com" class="text-blue-400 hover:underline">pranav.khatavkar@example.com</a>
+          </div>
+          <div class="m-4 text-center">
+            <img src="siddhant.jpg" alt="Siddhant Mishra" class="w-32 h-32 rounded-full mx-auto mb-2">
+            <p>Siddhant Mishra</p>
+            <p>S2304-490</p>
+            <a href="mailto:siddhant.mishra@example.com" class="text-blue-400 hover:underline">siddhant.mishra@example.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statement and Objectives Section -->
+  <section id="problem-objectives" class="py-20 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Problem Statement</h2>
+      <p class="mb-6">The task is to develop a hand gesture-controlled rover system that empowers users, including individuals with disabilities, to command and maneuver the rover through intuitive hand gestures. This system aims to enhance accessibility and user interaction, enabling individuals of all abilities to navigate their surroundings with ease and independence.</p>
+
+      <h2 class="text-3xl font-bold mb-4">Objective and Scope</h2>
+      <p class="mb-6">
+        Objective<br>
+        To study socket programming (image processing).<br>
+        To interface image processing with microcontroller (ESP32).<br>
+        To interface motor driver with microcontroller.<br>
+        To recognize the real time hand gestures using image processing and navigate the rover.<br>
+      </p>
+      <p class="mb-6">
+        This project encompasses three primary objectives. Firstly, it seeks to explore socket programming techniques, with a focus on image processing. Secondly, the project aims to establish communication between image processing and a microcontroller, specifically the ESP32. Thirdly, it endeavors to interface a motor driver with the microcontroller. Lastly, the project aims to implement real-time hand gesture recognition using image processing and utilize this data to navigate the rover. By achieving these objectives, the project aims to create an integrated system capable of recognizing hand gestures in real-time and controlling the rover's movements accordingly, thus demonstrating the practical application of image processing techniques in rover navigation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Working Model and Pics Section -->
+  <section id="working-model" class="py-20 flex items-center justify-center">
+    <div class="content-box text-center max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Working Model</h2>
+      <video controls class="mx-auto mb-6 w-3/4">
+        <source src="working-model.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3 class="text-2xl font-bold mb-4">Project Images</h3>
+      <div class="flex justify-center">
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mr-4 slide-in-left">Add Image 1</button>
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full slide-in-right">Add Image 2</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Materials and Hardware, Software and ML Section -->
+  <section id="materials-software" class="py-20 flex items-center justify-center">
+    <div class="content-box text-left max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Materials and Hardware</h2>
+      <ul class="list-disc mb-6 pl-6">
+        <li><strong>ESP-WROOM32 Microcontroller:</strong> A powerful microcontroller with built-in Wi-Fi and Bluetooth capabilities, ideal for IoT projects and real-time data processing.</li>
+        <li><strong>Motor Driver L298 2A:</strong> A dual H-bridge motor driver that allows us to control the direction and speed of two DC motors independently.</li>
+        <li><strong>Jumper Wires:</strong> Essential for making connections between different components on a breadboard or with a microcontroller.</li>
+        <li><strong>3.7V 3800mAh Rechargeable LiPo Battery:</strong> A lightweight and high-capacity battery that powers the rover for extended periods.</li>
+        <li><strong>100 RPM BO Motors:</strong> High-torque, low-speed motors that provide precise control and movement for the rover.</li>
+        <li><strong>Chassis:</strong> The structural framework that holds all the components together, ensuring stability and durability.</li>
+        <li><strong>Camera for Hand Gesture Detection:</strong> A high-resolution camera used to capture hand gestures, which are then processed to control the rover.</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mb-4">Software and ML Used</h2>
+      <ul class="list-disc mb-6 pl-6">
+        <li><strong>Jupyter Notebook for Image Processing:</strong> An open-source web application that allows us to create and share documents containing live code, equations, visualizations, and narrative text, making it ideal for developing and testing our image processing algorithms.</li>
+        <li><strong>Arduino IDE for Microcontroller Programming:</strong> A user-friendly development environment for writing and uploading code to Arduino-compatible boards, including the ESP32.</li>
+        <li><strong>Python for Socket Programming and ML Model:</strong> A versatile programming language that we use for implementing socket communication between the rover and the control system, as well as for developing machine learning models for gesture recognition.</li>
+        <li><strong>OpenCV for Hand Gesture Recognition:</strong> An open-source computer vision library that provides tools for image and video analysis, including real-time hand gesture recognition.</li>
+        <li><strong>Keras for ML Model Implementation:</strong> A high-level neural networks API that allows us to easily build and train machine learning models for recognizing hand gestures.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Future Scope, Conclusion, and Contact Us Section -->
+  <section id="future-contact" class="py-20 flex items-center justify-center">
+    <div class="content-box text-left max-w-5xl fade-in">
+      <h2 class="text-3xl font-bold mb-4">Future Scope and Conclusion</h2>
+      <p class="mb-6">
+        <strong>Future Scope:</strong> Our project can be expanded to include advanced features like AI-driven gesture recognition, integration with smart home devices, and enhanced mobility options for various terrains. The technology can also be adapted for use in other assistive devices, improving the quality of life for individuals with various disabilities. Furthermore, integrating machine learning algorithms can refine gesture recognition accuracy, making the system more responsive and reliable. Developing modular attachments can enable the rover to perform specific tasks like picking objects, aiding in daily activities for users with disabilities.
+      </p>
+      <p class="mb-6">
+        <strong>Conclusion:</strong> Our hand gesture-controlled rover project successfully demonstrates the practical application of image processing and microcontroller integration to create an intuitive and accessible control system. This project not only enhances mobility and independence for individuals with disabilities but also showcases the potential for future innovations in assistive technology. By combining hardware and software expertise, we have developed a robust platform that can serve as a foundation for future research and development in the field of assistive robotics. The insights gained from this project can drive further advancements, leading to more sophisticated and versatile assistive devices that significantly improve the quality of life for users.
+      </p>
+
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="mb-6">Feel free to reach out to us for any queries or collaboration opportunities.</p>
+      <div class="mb-6">
+        <h3 class="text-2xl font-bold">Team Members</h3>
+        <p>Mayank Soni (S2307-812) - <a href="mailto:mayank.soni@example.com" class="text-blue-400 hover:underline">mayank.soni@example.com</a></p>
+        <p>Tuhinansh Sharma (S2306-1188) - <a href="mailto:tuhinansh.sharma@example.com" class="text-blue-400 hover:underline">tuhinansh.sharma@example.com</a></p>
+        <p>Pranav Khatavkar (S2309-1397) - <a href="mailto:pranav.khatavkar@example.com" class="text-blue-400 hover:underline">pranav.khatavkar@example.com</a></p>
+        <p>Siddhant Mishra (S2304-490) - <a href="mailto:siddhant.mishra@example.com" class="text-blue-400 hover:underline">siddhant.mishra@example.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Automatic scrolling with delay of 15 seconds, and 1 minute wait if user navigates
+    let currentSectionIndex = 0;
+    const sections = document.querySelectorAll('section');
+    const sectionCount = sections.length;
+  
+    function scrollToSection(index) {
+      sections[index].scrollIntoView({ behavior: 'smooth' });
+    }
+  
+    function startAutoScroll() {
+      setInterval(() => {
+        currentSectionIndex = (currentSectionIndex + 1) % sectionCount;
+        scrollToSection(currentSectionIndex);
+      }, 15000);
+    }
+  
+    window.addEventListener('scroll', () => {
+      clearTimeout(window.scrollTimeout);
+      window.scrollTimeout = setTimeout(() => {
+        currentSectionIndex = Array.from(sections).findIndex(
+          section => section.getBoundingClientRect().top >= 0
+        );
+      }, 60000);
+    });
+  
+    startAutoScroll();
+  </script>
+  
+</body>
+</html>
